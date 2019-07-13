@@ -4,16 +4,71 @@
 <head>
 <style>
 
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
 body{
 	background-color: lightblue;
 	color: white;
 	
 }
+
+nav {
+	margin-left: 35%
+}
 	
-	nav ul li{
-		color: white;
-		font-size: 20px;
-	}
+nav ul{
+	list-style-type: none
+}
+
+nav ul li{
+	display: inline-block;
+    color: white;
+    margin-left: -4px;
+    height: 40px;
+    width: 136px;
+    border: 1px solid white;
+    text-align: center;
+    font-size: 18px;
+    padding: 9px;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+	background-color: white;
+	color: gray
+}
+
+
+nav ul li ul li:hover a{
+	color: gray
+
+}
+
+nav ul li ul{
+	position: absolute;
+	margin-top: 9px;
+	margin-left: -6px;
+}
+
+nav ul li li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+
+nav ul li ul li{
+	display: none
+}
+nav ul li:hover li{
+	display: block
+}
+
+
+
 
 </style>
 
@@ -21,15 +76,25 @@ body{
 
 </head>
 <body>
+
 	<nav>
 		<ul>
-			<li>home</li>
-			<li>contact us</li>
-			<li>our news </li>
-			<li>follow us</li>
+			<li>home
+				<ul>
+					<li><a href="">courses</a></li>
+					<li><a href="">certifications</a></li>
+					<li><a href="">Pro lang</a></li>
+					<li><a href="">security</a></li>
+					<li><a href="">website</a></li>
+				</ul>
+			</li>
+			<li>explore</li>
+			<li>marketplace</li>
+			<li>Contact Us</li>
 		</ul>
 	
 	</nav>
+	
 
 
 </body>
