@@ -48,11 +48,13 @@ nav ul li ul li:hover a{
 
 }
 
+
 nav ul li ul{
 	position: absolute;
 	margin-top: 9px;
 	margin-left: -6px;
 }
+
 
 nav ul li li a{
 	text-decoration: none;
@@ -60,13 +62,38 @@ nav ul li li a{
 	color: white;
 }
 
+
 nav ul li ul li{
-	display: none
-}
-nav ul li:hover li{
-	display: block
+	display: none;
+	position: relative;
 }
 
+nav ul li:hover li{
+	display: block;
+	
+}
+
+nav ul li li ul {
+	position: absolute;
+	top: -9px;
+	left: 144px;
+	display: none;
+	
+}
+
+nav ul li li:hover ul{
+	display: block;
+	
+}
+
+nav li li li a{
+	color: white
+}
+
+nav ul li ul li :hover li a{
+	color: white
+
+}
 
 
 
@@ -83,13 +110,32 @@ nav ul li:hover li{
 				<ul>
 					<li><a href="">courses</a></li>
 					<li><a href="">certifications</a></li>
-					<li><a href="">Pro lang</a></li>
-					<li><a href="">security</a></li>
+					<li><a href="">Pro lang</a>
+						<ul>
+							<li><a href="">Java</a></li>
+							<li><a href="">spring</a></li>
+							<li><a href="">php</a></li>
+							<li><a href="">laravel</a></li>
+						</ul>
+					</li>
+					<li><a href="">security</a>
+						<ul>
+							<li><a href="">CRE</a></li>
+							<li><a href="">Networks</a></li>
+							<li><a href="">python</a></li>
+							
+						</ul>
+					</li>
 					<li><a href="">website</a></li>
 				</ul>
 			</li>
 			<li>explore</li>
-			<li>marketplace</li>
+			<li>marketplace
+				<ul>
+					<li><a href="">Library</a></li>
+					<li><a href="">Marketplace</a></li>
+				</ul>
+			</li>
 			<li>Contact Us</li>
 		</ul>
 	
